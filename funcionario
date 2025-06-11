@@ -1,0 +1,21 @@
+CREATE TABLE if not exists Funcionario (
+  id INTEGER primary key AUTOINCREMENT,
+  cargo VARCHAR(100) NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  cpf VARCHAR(14) NOT NULL UNIQUE,
+  endereco TEXT,
+  telefone VARCHAR(15),
+  idade INTEGER
+  );
+  
+  INSERT INTO Funcionario (cargo, nome, cpf, endereco, telefone, idade)
+  VALUES (
+    'recepcionista',
+    'mariana schakofski',
+    '123.456.789-55',
+    'av das cataratas, 123, foz do iguaçu - PR',
+    '(45) 99999-999',
+    '21'
+    );
+  
+  SELECT * FROM funcionario;
