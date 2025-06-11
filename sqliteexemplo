@@ -1,0 +1,23 @@
+CREATE TABLE if not exists clientes (
+  id INTEGER primary key AUTOINCREMENT,
+  nome VARCHAR(100) NOT NULL,
+  cpf VARCHAR(14) NOT NULL UNIQUE,
+  telefone VARCHAR(15),
+  email VARCHAR(100),
+  data_nascimento DATE,
+  endereco TEXT
+  );
+  
+  INSERT INTO Clientes (nome, cpf, telefone, email, data_nascimento, endereco)
+  VALUES (
+    'mariana schakofski',
+    '123.456.789-00',
+    '(45) 99999-999',
+    'kkkkkk@gmail.ru',
+    '2000-01-01',
+    'av das cataratas, 123, foz do iguaçu - PR'
+    );
+  
+  SELECT * FROM clientes;
+  
+  
