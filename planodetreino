@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS plano_treino (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,  -- Deixa o SQLite gerenciar os IDs
+  cod_cliente VARCHAR(6) NOT NULL
+);
+
+-- Insere apenas o cod_cliente, deixando o ID ser autoincrementado
+INSERT INTO plano_treino (cod_cliente)
+VALUES ('12222');
+
+-- Consulta os dados
+SELECT * FROM plano_treino;
