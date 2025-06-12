@@ -1,0 +1,12 @@
+CREATE TABLE if not exists cargo (
+  id integer PRIMARY KEY AUTOINCREMENT,
+  cod_func  VARCHAR(6) NOT NULL,
+  funcao VARCHAR(100) NOT NULL
+  );
+  INSERT INTO cargo (cod_func, funcao)
+  VALUES(
+    '111111',
+    'recepicionista'
+    );
+  
+SELECT * FROM cargo;
