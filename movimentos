@@ -1,0 +1,14 @@
+CREATE TABLE if not exists movimentos (
+  id INTEGER primary key AUTOINCREMENT,
+  frequencia VARCHAR(100) NOT NULL,
+  pagamento VARCHAR(6),
+  plano_treino VARCHAR(100)
+  );
+  
+  INSERT INTO movimentos (frequencia, pagamento, plano_treino)
+  VALUES (
+    'sete',
+    '90,00',
+    'wwwwwwww'
+    );
+    SELECT * FROM movimentos;
