@@ -1,0 +1,13 @@
+CREATE TABLE if not exists movimento_mes (
+  id_movimento INTEGER primary key AUTOINCREMENT,
+  cliente varchar(50) not NULL,
+  treinos_feitos varchar(10) NOT NULL,
+  faltas varchar(10) NOT NULL 
+  );
+  INSERT INTO movimento_mes (cliente, treinos_feitos, faltas)
+  VALUES(
+    'mariana',
+    '44',
+    '122'
+    );
+    
