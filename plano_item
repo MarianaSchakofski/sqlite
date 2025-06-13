@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS plano_item (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,  
+  exercicio_seq VARCHAR(6) NOT NULL
+);
+
+
+INSERT INTO plano_item (exercicio_seq)
+VALUES ('leg, afundo, agachamento, barra, bulgaro, stiff, agachamento terra, abdutora');
+
+
+SELECT * FROM plano_item;
+    
