@@ -4,7 +4,7 @@ CREATE TABLE if not exists clientes (
   idade INTEGER
   telefone VARCHAR(15),
   telefone_emergencia VARCHAR(15),
-  endereco TEXT
+  endereco TEXT,
   email VARCHAR(100),
   cpf VARCHAR(14) NOT NULL UNIQUE,
   );
@@ -16,7 +16,7 @@ CREATE TABLE if not exists clientes (
     '(45) 99999-999',
     '(45) 22222-222',
     'av das cataratas, 123, foz do iguaçu - PR',
-    'iiiiiii@gmail.pr'
+    'iiiiiii@gmail.pr',
     '123.321.456-11'
     );
   
