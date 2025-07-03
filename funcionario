@@ -6,16 +6,13 @@ CREATE TABLE if not exists Funcionario (
   endereco TEXT,
   telefone VARCHAR(15),
   idade INTEGER
-  );
+);
   
-  INSERT INTO Funcionario (cargo, nome, cpf, endereco, telefone, idade)
-  VALUES (
-    'recepcionista',
-    'mariana schakofski',
-    '123.456.789-55',
-    'av das cataratas, 123, foz do iguaçu - PR',
-    '(45) 99999-999',
-    '21'
-    );
+INSERT INTO Funcionario (cargo, nome, cpf, endereco, telefone, idade)
+VALUES 
+  ('recepcionista', 'mariana schakofski', '123.456.789-55', 'av das cataratas, 123, foz do iguaçu - PR', '(45) 99999-999', '21'),
+  ('personal', 'caua', '555.666.777-28', 'av das cataratas, 123, foz do iguaçu - PR', '(45) 99999-999', '21'),
+  ('faxineiro', 'isabely', '199.000.717-21', 'av das cataratas, 123, foz do iguaçu - PR', '(45) 99999-999', '21'),
+  ('atendente', 'giovana', '221.677.888-75', 'av das cataratas, 123, foz do iguaçu - PR', '(45) 99999-999', '21');
   
-  SELECT * FROM funcionario;
+SELECT * FROM funcionario;
