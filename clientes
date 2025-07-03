@@ -1,12 +1,12 @@
 CREATE TABLE if not exists clientes (
   id INTEGER primary key AUTOINCREMENT,
   nome VARCHAR(100) NOT NULL,
-  idade INTEGER
+  idade INTEGER,
   telefone VARCHAR(15),
   telefone_emergencia VARCHAR(15),
   endereco TEXT,
   email VARCHAR(100),
-  cpf VARCHAR(14) NOT NULL UNIQUE,
+  cpf VARCHAR(14) NOT NULL UNIQUE
   );
   
   INSERT INTO Clientes (nome, idade, telefone, telefone_emergencia, endereco, email, cpf)
@@ -21,5 +21,6 @@ CREATE TABLE if not exists clientes (
     );
   
   SELECT * FROM clientes;
+  
   
   
