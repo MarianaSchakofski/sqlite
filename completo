@@ -30,11 +30,9 @@ CREATE TABLE if not exists clientes (
     '(45) 22222-222',
     'av das cataratas, 123, foz do iguaçu - PR',
     'iiiiiii@gmail.pr',
-    '123.321.456-11'
+    '123.321.456-18'
     );
-  
-  SELECT * FROM clientes;
-  SELECT * FROM clientes;
+    SELECT * from clientes;
   
   CREATE TABLE if not exists Funcionario (
   id INTEGER primary key AUTOINCREMENT,
